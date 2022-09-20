@@ -1,6 +1,4 @@
-W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes html {
-    box-sizing: border-box
-}
+
 
 *,
 *:before,
@@ -564,3 +562,121 @@ html {
 .w3-border-pale-green,.w3-hover-border-pale-green:hover {    border-color: #e7ffe7 !important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover {    border-color: #ffffcc !important}
 .w3-border-pale-blue,.w3-hover-border-pale-blue:hover {    border-color: #e7ffff !important}
+
+
+*{
+    margin: 500;
+    padding: 500;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 248, 252);
+    color: #080808;
+    font-size: larger;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body::after,
+body::before{
+    content: " ";
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+    opacity: 0.5;
+
+}
+
+body::before{
+    background-color: aliceblue;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%);
+
+}
+
+body::after{
+
+    background-color: black;
+    right: 0;
+    top: 0;
+    transform: translate( 50%);
+    }
+
+    .form-main{
+
+        min-height: 100vh;
+        padding: 60px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .form-content{
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .form-content .box{
+        border-color: white;
+        border: 5px solid ;
+        padding: 40px 50px;
+        border-radius: 20px;
+        
+
+    }
+
+    .form-content h3{
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.2;
+        color: rgb(11, 19, 1);
+        font-weight: 500;
+    }
+
+    .form-content-form{
+        margin: 25px 0 20px;
+    }
+
+    .form-content .input-box{
+        margin: 25px;
+    }
+
+    .form-content .input-control{
+        display: block;
+        height: 45px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(183, 192, 192);
+        color: inherit;
+        font-weight:500;
+        font-size: 22px;
+
+    }
+
+    .form-content .input-link{
+        margin-top: 10px;
+        text-align: right;
+
+    }
+
+    .form-content .btn{
+        height: 45px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 25px;
+        user-select: none;
+
+    }
