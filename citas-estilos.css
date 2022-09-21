@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(56, 56, 87);
+    color: rgb(45, 10, 143);
+    font-size: larger;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body::after,
+body::before{
+    content: " ";
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+    opacity: 0.5;
+
+}
+
+body::before{
+    background-color: aliceblue;
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%);
+
+}
+
+body::after{
+
+    background-color: black;
+    right: 0;
+    top: 0;
+    transform: translate( 50%);
+    }
+
+    .form-main{
+
+        min-height: 100vh;
+        padding: 60px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .form-content{
+        width: 100%;
+        max-width: 450px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .form-content .box{
+        border-color: white;
+        border: 5px solid ;
+        padding: 40px 50px;
+        border-radius: 20px;
+        
+
+    }
+
+    .form-content h3{
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.2;
+        color: rgb(11, 19, 1);
+        font-weight: 500;
+    }
+
+    .form-content-form{
+        margin: 25px 0 20px;
+    }
+
+    .form-content .input-box{
+        margin: 25px;
+    }
+
+    .form-content .input-control{
+        display: block;
+        height: 45px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(183, 192, 192);
+        color: inherit;
+        font-weight:500;
+        font-size: 22px;
+
+    }
+
+    .form-content .input-link{
+        margin-top: 10px;
+        text-align: right;
+
+    }
+
+    .form-content .btn{
+        height: 45px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 25px;
+        user-select: none;
+
+    }
